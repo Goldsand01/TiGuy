@@ -12,8 +12,6 @@
   header{
     background-color: rgba(0, 0, 0, 0.37);
     display: flex;
-    justify-content: end;
-    align-items: center;
     padding: 30px 10%;
     text-decoration: none;
   }
@@ -34,45 +32,170 @@
       font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
   }
   .nav_links li a::after{
-      transform: scale(0, 1);
-      transform-origin: 0% 100%;
-      transition: transform 0.3s ease-in-out;}
+    transform: scale(0, 1);
+    transform-origin: 0% 100%;
+    transition: transform 0.3s ease-in-out;}
   .nav_links li a {
-    transition: all 0.3s ease 0s;
-  } 
+  transition: all 0.3s ease 0s;} 
+  .nav_links li a:hover {background-image:  linear-gradient(to right, #000746 0%, #1c50e0  51%, #003099  100%)}
+  .nav_links li a  {
+     margin: 10px;
+     padding: 10px 25px;
+     text-align: center;
+     text-transform: uppercase;
+     transition: 0.5s ease-in;
+     background-size: 200% auto;
+     color: rgb(255, 255, 255);            
+     box-shadow: 0 0 20px rgba(255, 255, 255, 0.438);
+     border-radius: 10px;
+     display: block;}
+   .nav_links #selected {background-image: linear-gradient(to right, #000046 0%, #1c50e0  51%, #000046  100%); }
+   .nav_links #selected:hover {background-position: right right; 
+      color: #fff;
+      text-decoration: none;}
+.logo { cursor: pointer; margin-right: auto; justify-content: left; }
+
+.logo { cursor: pointer; margin-right: auto; justify-content: left; border-radius: 15px; }
+.nav li a{
+    text-decoration: none;color: #c5c5c5; font-family: 'Comfortaa', cursive;}
+.nav li{ display: inline-block; padding: 0px 20px; text-decoration: none;}
+.nav li a:hover { color: #f0ad32; text-decoration: underline; transition: all 0.2s;}
+.logo { cursor: pointer; margin-right: auto; justify-content: left; border-radius: 15px; }
+.nav li a{
+    text-decoration: none;color: #c5c5c5; font-family: 'Comfortaa', cursive;}
+.nav li{ display: inline-block; padding: 0px 20px; text-decoration: none;}
+.nav li a:hover { color: #f0ad32; text-decoration: underline; transition: all 0.2s;}
+h1 {
+  padding-top: 20px;
+  color: rgb(233, 233, 233);
+  font-weight: 0.2;
+  opacity: 0.8;
+  color:rgb(191, 191, 191);
+  font-weight: 0.2;
+  opacity: 0.8;
+  align-self: auto;
+  text-align: center;
+}
+nav {
+  height: 25;
+}
+h3 {
+  color: rgb(255, 255, 255);
+  font-weight: 0.15;
+  opacity: 0.8;
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+
+}
+
+p {
+  color:rgb(230, 224, 224);
+  font-weight: 0.2;
+  opacity: 0.8;
+  align-self: auto;
+  text-align: center;
+}
+
+h2 {
+  color: #ffff;
+  font-weight: 0.2;
+  opacity: 0.8;
+}
+
+
+.btn2 {
+  position: relative;
+  width: 210px;
+  height: 70px;
+  border-radius: 3px;
+  color: #fff;
+  background: #027ad6;
+  font: 700 24px sans-serif;
   
-      
-    .nav_links li a:hover {background-image:  linear-gradient(to right, #000746 0%, #1c50e0  51%, #003099  100%)}
-    .nav_links li a  {
-       margin: 10px;
-       padding: 10px 25px;
-       text-align: center;
-       text-transform: uppercase;
-       transition: 0.5s ease-in;
-       background-size: 200% auto;
-       color: rgb(255, 255, 255);            
-       box-shadow: 0 0 20px rgba(255, 255, 255, 0.438);
-       border-radius: 10px;
-       display: block;
-     }
-     .nav_links #selected {background-image: linear-gradient(to right, #000046 0%, #1c50e0  51%, #000046  100%); }
-     .nav_links #selected:hover {background-position: right right; 
-        color: #fff;
-        text-decoration: none;}
-  .logo { cursor: pointer; margin-right: auto; justify-content: left; }
+}
+h4 {
+  color:rgb(230, 224, 224);
+  font-weight: 0.2;
+  opacity: 0.8;
+  align-self: auto;
+  text-align: center;
+}
+.bn5 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  text-decoration: none;color: #c5c5c5; font-family: 'Comfortaa', cursive;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.bn5:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #5a5a5a,
+    #353535,
+    #1c1c1c,
+    #000000,
+    #1c1c1c,
+    #353535,
+    #5a5a5a
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowingbn5 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
   
-  .nav_links{list-style: none; }
-  .nav_links li { display: inline-block; padding: 0px 20px; text-decoration: none;}
-  
-    
-  li{ list-style: none;
-    text-decoration: none;
-    
+}
+
+@keyframes glowingbn5 {
+  0% {
+    background-position: 0 0;
   }
-  
- 
-  li,a, button {font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: 500;font-size: 16px; color: #ecf0f1; text-decoration: none; z-index: 1;}
-  
-  Center{
-    margin: 1;
+  50% {
+    background-position: 400% 0;
   }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+
+
+.bn5:hover:before {
+  opacity: 1;
+}
+
+.bn5:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #00000085;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+    
+
+            
